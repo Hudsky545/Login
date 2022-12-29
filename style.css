@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed&family=Lexend:wght@400;500&family=Poppins:wght@400;500;600;700&family=Roboto:wght@300;500;900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body {
+    background-color: #f0f0f0;
+    height: 100vh;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+}
+main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.header__container {
+    /* background-color: red; */
+    padding: 10px 10px;
+    margin-bottom: 2.5rem;
+    text-align: center;
+}
+.header__container h1 {
+    color: #000000;
+}
+.header__container h1 span {
+    color: red;
+    font-weight: 700;
+}
+
+.container {
+    /* background-color: red; */
+    padding: 30px 40px;
+    width: 400px;
+    box-sizing: border-box;
+    border-radius: 3px;
+    background-color:#fff;
+    box-shadow: 5px 4px 5px rgba(0,0,0,.6);
+
+
+                
+}
+
+
+.container .head {
+    margin-bottom: 1.5rem;
+    padding: 5px;
+    /* background-color: red; */
+    width: 100%;
+    border-bottom: 1px solid #dddddd;
+}
+.container .head h2 {
+    font-weight: 500;
+    color: #6a6969;
+}
+
+input {
+    height: 40px;
+    margin-bottom: 20px;
+    border: 1px solid #cdcdcd;
+    width: 100%;
+    outline: none;
+    font-size: 1rem;
+    padding-left: 10px;
+    transition: all 300ms ease;
+}
+input:focus,
+input:focus-visible {
+    border: 2px solid #0088cc;
+}
+input:hover {
+    border: 1px solid #0088cc;
+}
+input[type="text"] {
+    margin-top: 0.2rem;
+}
+.container .user__account{
+    position: relative;
+}
+.container .user__account span {
+    position: absolute;
+    background-color: #e0e0e0;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.container .user__account span.user {
+    right: 0px;
+    top: 3px;
+    color: #757575;
+}
+.container .user__account span.lock {
+    top: 0;
+    right: 0;
+    color: #757575;
+}
+.container .empty {
+    display: flex;
+    color: #23527c;
+    margin-top: -10px;
+    font-size: 0.8rem;
+    cursor: pointer;
+}
+.container .empty span.unlock {
+    cursor: pointer;
+}
+.container .empty a {
+    color: #23527c;
+    margin-left: 5px;
+}
+.container .empty a:hover {
+    text-decoration: underline;
+    
+}
+.container .login__contain {
+    width: 100%;
+    background-color: red;
+    text-align: center;
+    padding: 8px 0;
+    margin-top: 10px;
+    border-radius: 3px;
+    font-size: 0.8rem;
+    color: #fff;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+.container .login__contain:hover {
+    box-shadow: 0px 4px 4px 4px rgba(255, 0, 0, 0.537);
+}
+.container .alternative {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    /* background-color: red; */
+    margin-top: 15px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: #595959;
+}
+
+.container .facebook__account,
+.container .google__account {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    cursor: pointer;
+    background-color: #dbf6ff70;
+    border-radius: 3px;
+    outline: none;
+    width: 100%;
+    padding: 10px 0;
+    transition: all .3s ease;
+    user-select: none;
+}
+.container .alternative i {
+    font-size: 1.2rem;
+    margin-right: 5px;
+}
+.container .facebook__account i {
+    color: blue;
+}
+.container .google__account i {
+    color: red;
+}
+.container .facebook__account:hover,
+.container .google__account:hover {
+    background-color:#dbf6ff36 ;
+}
+
+.new__member {
+    margin-top: 1.5rem;
+    font-size: 0.8rem;
+    color: #0088cc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.new__member:hover {
+    text-decoration: underline;
+}
+.new__member a {
+    color: #0088cc;
+    font-weight: 700;
+}
+.new__member i {
+    font-size: 1.2rem;
+    margin-right: 3px;
+}
+.box {
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    background-color: #c0c0c0;
+    padding: 20px;
+    width: 300px;
+    border-radius: 5px;
+    display: none;
+}
+.box .pop {
+    display: flex;
+    align-items: center;
+}
+.box .contain__me {
+    position: relative;
+}
+.box .contain__me i {
+    position: absolute;
+    top: -10px;
+    color: red;
+    cursor: pointer;
+}
